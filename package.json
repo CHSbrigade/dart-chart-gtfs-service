@@ -1,0 +1,8 @@
+{
+  "name": "dart-chart-service",
+  "version": "1.0.0",
+  "description": "Compile, collate, and serve GTFS data for CARTA DART lines as JSON.",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT"
+}
