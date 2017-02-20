@@ -6,6 +6,7 @@ import bodyParser from 'body-parser'
 import config from './config.json'
 // mock data
 import {
+  routeData,
   routesData
 } from './data'
 
@@ -34,6 +35,21 @@ app.get('/routes', (req, res) => res.status(200).send({
   data: routesData,
   status: "success"
 }))
+
+app.get('/routes/:routeId', (req, res) => {
+  const data = routeData[req.params.routeId]
+  if (data) {
+    res.status(200).send({
+      data: data,
+      status: "success"
+    })
+  } else {
+    res.status(404).send({
+      message: `No route found with ID: ${req.params.routeId}`,
+      status: "error"
+    })
+  }
+})
 
 
 // If URL not matched by this point, then return 404
