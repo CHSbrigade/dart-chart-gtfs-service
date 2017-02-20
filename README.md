@@ -1,17 +1,19 @@
-# DART Chart GTFS Service
+# CHSBrigade GTFS Service
 
-Grab public transit data on a nightly basis, digest, and provide a service by which the DART Chart can consume JSON.
+Grab public transit data on a nightly basis, digest, and provide a service by which the DASH app can consume JSON.
 
 Public transit data is published in **GTFS** format. More information about the **GTFS** format can be found here: https://developers.google.com/transit/gtfs/reference/
 
 ## Available Data
 
-### Routes
+### /routes
 
-- /routes
+Return the DASH routes active today.
 
-Return the DART routes active today.
+- https://chsbrigade--gtfs-service.herokuapp.com/routes
 
-- /routes/:route_id
+### /routes/:routeId
 
-Return all relavent details for a given DART route.
+Return details for a given DASH route.
+
+- https://chsbrigade--gtfs-service.herokuapp.com/routes/1252
