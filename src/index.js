@@ -31,7 +31,8 @@ app.use(bodyParser.json({
 
 // routes
 app.get('/routes', (req, res) => res.status(200).send({
-  data: routesData
+  data: routesData,
+  status: "success"
 }))
 
 
