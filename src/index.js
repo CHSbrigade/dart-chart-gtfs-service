@@ -35,9 +35,10 @@ app.get('/routes', (req, res) => res.status(200).send({
 }))
 
 
-// setup dummy route
-app.get('*', (req, res) => res.status(200).send({
-  message: "Dart Chart Says Hello"
+// If URL not matched by this point, then return 404
+app.get('*', (req, res) => res.status(404).send({
+  message: "Resource not found",
+  status: "error"
 }))
 
 
