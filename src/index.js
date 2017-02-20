@@ -4,6 +4,10 @@ import cors from 'cors'
 import morgan from 'morgan'
 import bodyParser from 'body-parser'
 import config from './config.json'
+// mock data
+import {
+  routesData
+} from './data'
 
 
 // create server
@@ -22,6 +26,12 @@ app.use(cors({
 
 app.use(bodyParser.json({
   limit: config.bodyLimit
+}))
+
+
+// routes
+app.get('/routes', (req, res) => res.status(200).send({
+  data: routesData
 }))
 
 

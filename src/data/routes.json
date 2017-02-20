@@ -1,0 +1,40 @@
+{
+  "routes": [
+    {
+      "agencyId": "213",
+      "routeId": "1252",
+      "routeShortName": "210",
+      "routeLongName": "C oc C/Aquarium Shuttle - DASH",
+      "routeDesc": "Free route along Calhoun St. from Charleston Visitors' Center to the College of Charleston, and on to the SC Aquarium.",
+      "routeType": "3",
+      "routeUrl": "http://www.ridecarta.com/wp-content/uploads/2016/05/Dash-Map.pdf",
+      "routeColor": "f89c1c",
+      "routeTextColor": "000000",
+      "routeSortOrder": 0
+    },
+    {
+      "agencyId": "213",
+      "routeId": "1253",
+      "routeShortName": "211",
+      "routeLongName": "Meeting/King - DASH",
+      "routeDesc": "Free Trolley Route through downtown Charleston historic district (all DASH routes stop at Visitors' Center)",
+      "routeType": "800",
+      "routeUrl": "http://www.ridecarta.com/wp-content/uploads/2016/05/Dash-Map.pdf",
+      "routeColor": "70c6a2",
+      "routeTextColor": "000001",
+      "routeSortOrder": 0
+    },
+    {
+      "agencyId": "213",
+      "routeId": "1254",
+      "routeShortName": "213",
+      "routeLongName": "Lockwood/Calhoun - DASH",
+      "routeDesc": "Free route serving destinations from the Charleston Visitors Center to TTC Palmer Campus, Medical District, VA Hospital, Brittlebank Park along Calhoun St. and Cannon St.",
+      "routeType": "3",
+      "routeUrl": "http://www.ridecarta.com/wp-content/uploads/2016/05/Dash-Map.pdf",
+      "routeColor": "9c8dc3",
+      "routeTextColor": "000002",
+      "routeSortOrder": 0
+    }
+  ]
+}
